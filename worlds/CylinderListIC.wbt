@@ -1,0 +1,13 @@
+#VRML_SIM R2019a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.2600827729945397 0.9601948731970291 0.10189581285613378 0.7098219875113126
+  position 2.9898838309221665 1.0098416062887428 4.1847237647280915
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+}
