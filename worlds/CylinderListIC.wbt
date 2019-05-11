@@ -2,8 +2,8 @@
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.9999330786049315 -0.010387941308361666 0.005092051358539561 0.7344129392649172
-  position 0.6640714233115298 2.0060245014130786 2.0007517275401034
+  orientation -0.9991169914825536 -0.03970497173898052 -0.013738724469828186 0.6667961673010023
+  position 0.36489361997635444 1.3829171661475848 1.2336004468672244
 }
 TexturedBackground {
 }
@@ -19,8 +19,8 @@ DEF A1_CYL1 Solid {
         baseColor 0.9372549019607843 0.1607843137254902 0.1607843137254902
       }
       geometry DEF G_CYL1 Cylinder {
-        height 0.2
-        radius 0.05
+        height 0.19999999999999998
+        radius 0.049999999999999996
       }
     }
   ]
@@ -34,7 +34,7 @@ DEF A2_CYL2 Solid {
       }
       geometry DEF G_CYL2 Cylinder {
         height 0.25
-        radius 0.05
+        radius 0.049999999999999996
       }
     }
   ]
@@ -48,8 +48,8 @@ DEF A3_CYL3 Solid {
         baseColor 0.5411764705882353 0.8862745098039215 0.20392156862745098
       }
       geometry DEF G_CYL3 Cylinder {
-        height 0.3
-        radius 0.05
+        height 0.30000000000000004
+        radius 0.049999999999999996
       }
     }
   ]
@@ -59,11 +59,92 @@ DEF CYL4 Solid {
   translation 0.9 0.175 0
   children [
     Shape {
+      appearance USE A_1
       geometry DEF G_CYL4 Cylinder {
         height 0.35
-        radius 0.05
+        radius 0.049999999999999996
       }
     }
   ]
   name "solid(3)"
+}
+DEF C5 Solid {
+  translation 0.3 0.125 0
+  children [
+    Shape {
+      appearance USE A_1
+      geometry USE G_CYL2
+    }
+  ]
+  name "solid(4)"
+}
+DEF C8 Solid {
+  translation 0.6 0.15 0
+  children [
+    Shape {
+      appearance USE A_1
+      geometry USE G_CYL3
+    }
+  ]
+  name "solid(5)"
+}
+DEF C11 Solid {
+  translation 0 0.1 -0.3
+  children [
+    Shape {
+      appearance USE A_2
+      geometry USE G_CYL1
+    }
+  ]
+  name "solid(6)"
+}
+DEF C10 Solid {
+  translation 0 0.1 -0.6
+  children [
+    Shape {
+      appearance USE A3
+      geometry USE G_CYL1
+    }
+  ]
+  name "solid(7)"
+}
+DEF C12 Solid {
+  translation 0.3 0.125 -0.6
+  children [
+    Shape {
+      appearance USE A3
+      geometry USE G_CYL2
+    }
+  ]
+  name "solid(8)"
+}
+DEF C6 Solid {
+  translation 0.6 0.15 -0.3
+  children [
+    Shape {
+      appearance USE A_2
+      geometry USE G_CYL3
+    }
+  ]
+  name "solid(9)"
+}
+DEF C9 Solid {
+  translation 0.9 0.175 -0.3
+  children [
+    Shape {
+      appearance USE A_2
+      geometry USE G_CYL4
+    }
+  ]
+  name "solid(10)"
+}
+DEF C7 Solid {
+  translation 0.9 0.175 -0.6
+  children [
+    Shape {
+      appearance USE A3
+      geometry USE G_CYL4
+    }
+  ]
+  name "solid(11)"
 }
